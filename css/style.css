@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+#conteudo-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+#banner-container,
+#form-container {
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#banner-container {
+    text-align: right;
+}
+
+#banner-container img {
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#form-container {
+    text-align: center;
+}
+
+#form-box {
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    width: 350px;
+    margin-top: 30px;
+}
+
+#logo-insta {
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+#form-loing {
+    margin-top: 20px;
+}
+
+#form-loing input {
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 80%;
+    margin: 5px auto;
+}
+
+#form-loing input[type="submit"] {
+    background-color: #b2dffc;
+    color: #ffff;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#form-loing input:hover[type="submit"] {
+    background-color: #1b9ff8;
+}
+
+.separador {
+    position: relative;
+}
+
+.linha {
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separador span {
+    position: absolute;
+    text-transform: uppercase;
+    color: #bbb;
+    background-color: #fff;
+    top: -6px;
+    width: 50px;
+    margin-left: -25px;
+    font-size: 14px;
+}
+
+#facebook-login {
+    margin-bottom: 25px;
+}
+
+#facebook-login a {
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+#facebook-login span {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+#perdeu-senha {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#perdeu-senha a {
+    text-decoration: none;
+    color: #373799
+}
+
+#cadastro-container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+#cadastro-container p {
+ font-size: 14px;
+ color: #262626;
+}
+
+#cadastro-container a {
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+#baixarapp-container {
+   width: 350px;
+   text-align: center;
+}
+
+#baixarapp-container p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+#baixarapp-container a {
+    text-decoration: none;
+}
+
+#baixarapp-container img {
+    width: 135px;
+    height: 40px;
+}
+
+footer {
+   text-align: left; 
+   width: 1000px;
+   margin: 50px auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#rodape-links {
+   /* width: 100%; */
+   /* padding: 24px; */
+   display: flex;
+   list-style: none;
+   /* justify-content: space-around; */
+}
+
+#rodape-links li {
+    /* font-size: 12px; */
+    margin-right: 10px;
+}
+
+#rodape-links a,
+#copyright {
+    text-decoration: none;
+    /* color: #262626; */
+    color: #8e8e8e;
+    /* font-weight: bold; */
+    font-size: 12px;
+}
+
+/* footer p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+} */
+
+#copyright {
+    margin-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 450px) {
+    body {
+        background-color: #fff;
+    }
+
+    #banner-container{
+        display: none;
+    }
+
+    #conteudo-container,
+    #form-box {
+        margin-top: 0;
+    }
+
+    #form-container,
+    #form-box,
+    #cadastro-container,
+    #baixarapp-container {
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    #rodape-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
